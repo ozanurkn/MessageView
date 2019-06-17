@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- default -->
+    <item android:state_focused="false" android:state_pressed="false">
+        <shape>
+            <solid android:color="#d32f2f" />
+            <stroke android:color="#d32f2f" />
+            <corners android:bottomLeftRadius="8dip" android:bottomRightRadius="8dip" android:topLeftRadius="8dip" android:topRightRadius="8dip" />
+            <!--<padding-->
+            <!--android:left="10dp"-->
+            <!--android:right="10dp"-->
+            <!--android:top="10dp"-->
+            <!--android:bottom="10dp" />-->
+
+
+            <!--<corners android:radius="10dp" />-->
+        </shape>
+
+    </item>
+
+    <!-- button focused -->
+    <item android:state_focused="true" android:state_pressed="false">
+        <shape>
+            <solid android:color="#d32f2f" />
+            <stroke android:color="#d32f2f" />
+            <corners android:bottomLeftRadius="8dip" android:bottomRightRadius="8dip" android:topLeftRadius="8dip" android:topRightRadius="8dip" />
+            <!--<padding-->
+            <!--android:left="10dp"-->
+            <!--android:right="10dp"-->
+            <!--android:top="10dp"-->
+            <!--android:bottom="10dp" />-->
+
+
+            <!--<corners android:radius="10dp" />-->
+        </shape>
+    </item>
+
+    <!-- button pressed -->
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape>
+            <solid android:color="#e53935" />
+            <stroke
+
+                android:color="#e53935" />
+            <corners android:bottomLeftRadius="12dip" android:bottomRightRadius="12dip" android:topLeftRadius="12dip" android:topRightRadius="12dip" />
+            <!--<padding-->
+            <!--android:left="10dp"-->
+            <!--android:right="10dp"-->
+            <!--android:top="10dp"-->
+            <!--android:bottom="10dp" />-->
+
+
+            <!--<corners android:radius="10dp" />-->
+        </shape>
+    </item>
+</selector>
