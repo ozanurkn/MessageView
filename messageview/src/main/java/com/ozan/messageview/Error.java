@@ -10,9 +10,14 @@ public enum Error {
 
     private String stringValue;
     private int intValue;
+
     private Error(String toString,int value){
         this.stringValue = toString;
         this.intValue = value;
+    }
+
+    public int getIntValue(){
+        return intValue;
     }
 
     @Override

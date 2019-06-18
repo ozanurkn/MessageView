@@ -9,9 +9,13 @@ public enum Success {
 
     private String stringValue;
     private int intValue;
-    private Success(String toString,int value){
+
+    private Success(String toString, int value){
         stringValue = toString;
         intValue = value;
+    }
+    public int getIntValue(){
+        return intValue;
     }
 
     @Override

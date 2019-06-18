@@ -7,36 +7,48 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RawRes;
+
 public class MessageView {
 
-    public static void showErrorMessage(Context context,String message,boolean sound){
+    public static void showErrorMessage(Context context, String message, boolean isOpenSound, Error sound, State state) {
         Toast toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
         View view = toast.getView();
         view.setBackgroundResource(R.drawable.drw_toast_error);
         TextView text = (TextView) view.findViewById(android.R.id.message);
-        text.setPadding(10, 10, 10, 10);
+        text.setPadding(30, 10, 30, 10);
+        text.setGravity(Gravity.CENTER);
         text.setText(message);
-        toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+        if (state.getStateKey().equals("CENTER"))
+            toast.setGravity(state.getStateValue() | state.getStateValue(), 0, 0);
+        else
+            toast.setGravity(state.getStateValue() | state.getStateValue(), 0, 200);
         toast.show();
 
-        if (sound){
-            MediaPlayer ring = MediaPlayer.create(context,R.raw.error_system_fault);
+        if (isOpenSound) {
+            int sound_way = sound.getIntValue();
+            MediaPlayer ring = MediaPlayer.create(context, sound_way);
             ring.start();
         }
     }
 
-    public static void showSuccessMessage(Context context,String message,boolean sound){
+    public static void showSuccessMessage(Context context, String message, boolean isOpenSound, Success sound,State state) {
         Toast toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
         View view = toast.getView();
         view.setBackgroundResource(R.drawable.drw_toast_success);
         TextView text = (TextView) view.findViewById(android.R.id.message);
-        text.setPadding(10, 10, 10, 10);
+        text.setPadding(30, 10, 30, 10);
+        text.setGravity(Gravity.CENTER);
         text.setText(message);
-        toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+        if (state.getStateKey().equals("CENTER"))
+            toast.setGravity(state.getStateValue() | state.getStateValue(), 0, 0);
+        else
+            toast.setGravity(state.getStateValue() | state.getStateValue(), 0, 200);
         toast.show();
 
-        if (sound){
-            MediaPlayer ring = MediaPlayer.create(context,R.raw.success_quite_impressed);
+        if (isOpenSound) {
+            int sound_way = sound.getIntValue();
+            MediaPlayer ring = MediaPlayer.create(context, sound_way);
             ring.start();
         }
     }
