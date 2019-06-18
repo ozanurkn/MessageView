@@ -6,5 +6,5 @@ Example usages can be found in example project.
 #Screen
 
 <a href='https://postimg.cc/Y4qGtZ7J' target='_blank'><img src='https://i.postimg.cc/Y4qGtZ7J/Bottom.png' border='0' alt='Bottom'/></a>
-[![Center.png](https://i.postimg.cc/KYsRTqZv/Center.png)](https://postimg.cc/nsBFb1j6)
-[![Top.png](https://i.postimg.cc/43MxyY5Y/Top.png)](https://postimg.cc/CZGg6L90)
+<a href='https://postimg.cc/nsBFb1j6' target='_blank'><img src='https://i.postimg.cc/KYsRTqZv/Center.png' border='0' alt='Center'/></a><br /><a href='https://gasstation-nearme.com/'>how far is the closest gas station</a><br />
+<a href='https://postimg.cc/CZGg6L90' target='_blank'><img src='https://i.postimg.cc/CZGg6L90/Top.png' border='0' alt='Top'/></a>
